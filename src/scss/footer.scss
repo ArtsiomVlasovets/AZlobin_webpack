@@ -1,0 +1,278 @@
+// footer
+.footer-top {
+  margin-bottom: 52px;
+  display: flex;
+
+  @media screen and (max-width: 1024px) {
+    .footer-menu {
+      display: none;
+    }
+  }
+
+  .footer-logo {
+    background-image: url(./img/footer/footer-logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 209px;
+    height: 52px;
+    margin: 0 auto 30px;
+  }
+
+  .footer-menu {
+
+
+    margin-left: 160px;
+    width: 90%;
+
+    ul {
+      height: 100%;
+      align-items: center;
+
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+
+    .footer-logo {
+      width: 145px;
+      height: 39px;
+
+    }
+
+    .footer-menu {
+      display: block;
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .menu ul {
+      flex-direction: column;
+      width: 100%;
+
+      li {
+        text-align: center;
+        padding: 12px 0;
+        border-bottom: 1px solid #f2f2f2;
+        width: 100%;
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+.col-4 {
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+
+}
+
+
+.footer-main {
+  @media screen and (max-width: 479px) {
+
+    .col-1,
+    .col-2 {
+      display: none;
+    }
+
+    .col-3 {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #f2f2f2;
+
+      .social-text {
+        display: none;
+      }
+
+      .social-footer {
+        display: block;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.socials-item {
+  min-width: auto;
+  min-height: auto;
+}
+
+.footer-column {
+  @media screen and (max-width: 1024px) {
+    width: 25%;
+  }
+
+  width: calc(100%/4 - 75px);
+
+  p {
+    margin-bottom: 10px;
+    color: $base-black;
+  }
+
+  .column-title {
+    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #13107A;
+  }
+
+  .footer-link {
+    margin-top: 20px;
+    font-weight: 300;
+    color: #13107a;
+    text-decoration: underline rgba(19, 16, 122, .5);
+  }
+
+  .social-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    border: 0;
+    padding: 0;
+
+    .social-text {
+      margin-right: 18px;
+      color: $base-black;
+    }
+  }
+
+  form {
+    margin: 23px 0;
+    display: flex;
+
+    input {
+      background: #F7F7F7;
+      outline: none;
+      border: none;
+      font-size: 14px;
+      height: 40px;
+      padding: 11px 18px;
+
+      &::placeholder {
+        font-size: 14px;
+        color: #8C8C8C;
+      }
+    }
+
+    .footer-btn {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: linear-gradient(228.78deg, rgba(40, 38, 150, 0.96) 0%, #09ABE4 100%);
+      min-width: 40px;
+      height: 40px;
+      transition: .3s;
+      padding: 0;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 9px;
+        background: url(./img/footer/footer-arrow.svg) no-repeat center;
+        background-size: contain;
+      }
+
+      &:hover {
+        background: linear-gradient(228.78deg, rgba(9, 8, 101, 0.96) 0%, #008ABB 100%);
+      }
+    }
+  }
+}
+
+.politics {
+
+
+  .footer-link {
+    display: inline-block;
+    margin: 0 0 15px 0;
+  }
+}
+
+
+
+.footer-bottom {
+
+
+  margin-bottom: 97px;
+
+  @media screen and (max-width: 479px) {
+    margin-bottom: 50px;
+  }
+
+  .footer_bot-inner {
+    display: flex;
+    justify-content: space-between;
+
+    .agreement {
+      a {
+        color: $light-blue;
+      }
+    }
+
+    @media screen and (max-width: 479px) {
+      display: block;
+
+      .warning {
+        display: none;
+      }
+    }
+
+    .payment {
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: 479px) {
+        display: none;
+      }
+    }
+
+    .pay-items {
+      display: flex;
+
+      .visa {
+        background-image: url(./img/footer/visa.svg);
+      }
+
+      .mastercard {
+        background-image: url(./img/footer/mascard.svg);
+      }
+
+      .maestro {
+        background-image: url(./img/footer/maestro.svg);
+      }
+
+      .mir {
+        background-color: #f7f7f7;
+        background-image: url(./img/footer/mir.svg);
+      }
+
+      .pay-item {
+        width: 41px;
+        height: 25px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin-left: 4px;
+
+        &:nth-child(1) {
+          margin-left: 14px;
+        }
+      }
+    }
+  }
+
+}
